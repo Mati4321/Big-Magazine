@@ -386,10 +386,20 @@ h1{
 
 
 @media (max-width: 480px) {
+    #background{
+        background-color:#464646;
+        min-width: 480px;
+    }
     #principal{
         background-color:#464646;
         min-width: 480px;
-        width: 100%;
+        border-style: none;
+    }
+
+    .Pprincipal{
+        flex-direction: column;
+        margin: 3%;
+        text-align: center;
     }
     
     .banner {
@@ -397,7 +407,7 @@ h1{
     }
 
     header nav {
-            position: sticky;
+        position: sticky;
         top: 0;
         z-index: 1;
         align-items: center;
@@ -416,7 +426,38 @@ h1{
         display: none;
     }
 
-    nav.responsive ul {
+    .Portada{
+        display: block;
+    }
+
+    .Portada img{
+        width: 98%;
+    }
+
+    .Portada h2{
+        text-align: start;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .nick-principal{
+        display: block;
+    }
+
+    .nick-principal div{
+        margin: 2%;
+    }
+
+    .nick-principal img{
+        width: 99%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* nav.responsive ul {
         display: block;
     }
 
@@ -428,7 +469,7 @@ h1{
 
     nav.responsive ul li a {
         padding-right: 0;
-    }
+    } */
 
     /* section {
         max-width: 480px;
@@ -453,14 +494,14 @@ h1{
         
     }
 
-    .valoracion a{
-        text-align: center;
-        justify-content: center;
+    .valoracion {
+        width: 350px;
         display: block;
+        margin-bottom: 2%;
     }
 
     .valoracion img{
-        
+        width: 350px;
         display: block;
     }
 
