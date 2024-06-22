@@ -191,6 +191,10 @@ h1{
     line-height: 1.5em;
 }
 
+.galeria img:hover{
+    scale: 1.1;
+}
+
 .descripcion-imagen {
     background-color:#2e2e2e;
     border-style: solid;
@@ -304,7 +308,6 @@ h1{
     border-color: rgb(21, 20, 20);
     border-radius: 20px;
     background-color: rgb(21, 20, 20);
-    /* width: 350px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -385,35 +388,29 @@ h1{
 @media (max-width: 480px) {
     #principal{
         background-color:#464646;
-        max-width: 480px;
+        min-width: 480px;
         width: 100%;
     }
     
-    header div,
-    header {
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        background-color: #9c0000;
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    header div,
-    header a {
-        flex: 1 0 50%;
+    .banner {
+        display: none ;
     }
 
     header nav {
+            position: sticky;
+        top: 0;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        display:block;
         flex-basis: 100%;
     }
 
-    .icon {
-        display: block;
-        padding-right: 0.6rem;
-        text-align: right;
-    }
+    header img{
+        padding-top: 1%;
+        width: 100px;
+        }
 
     nav ul {
         display: none;
@@ -433,39 +430,38 @@ h1{
         padding-right: 0;
     }
 
-    section {
+    /* section {
         max-width: 480px;
         width: 100%;
+        display: block;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
-    .principal {
+    /* .principal {
         height: 250px;
         padding: 10%;
-    }
-
-    .secundario {
-        margin-top: 1%;
-        display: block;
-    }
-
-    .secundario div {
-        margin-right: auto;
-        margin-left: auto;
-        width: 90%;
-    }
-
-    .secundario div a img {
-        margin-bottom: 1rem;
-    }
+    } */
 
     h2 {
         font-size: 1rem;
     }
 
-    h4 {
-        font-size: 1rem;
+    .valoraciones {
+        display: block;
+        
+        
+    }
+
+    .valoracion a{
+        text-align: center;
+        justify-content: center;
+        display: block;
+    }
+
+    .valoracion img{
+        
+        display: block;
     }
 
     footer {
