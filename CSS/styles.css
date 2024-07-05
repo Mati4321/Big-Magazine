@@ -527,6 +527,7 @@ h1{
 
     .imagen-descripcion{
         display: block;
+        padding-bottom: 0.5rem;
     }
 
     .imagen-descripcion img{
@@ -534,12 +535,22 @@ h1{
     }
 
     .descripcion-imagen{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
+
     .descripcion-imagen img {
         margin: 0;
         width: 98.8%;
+        order: 1;
     }
+
+    .descripcion-imagen div {
+        order: 2;
+        padding-bottom: 0.5rem;
+    }
+
+
     
     .container-form{
         display: block;
