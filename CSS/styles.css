@@ -460,6 +460,7 @@ h1{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         gap: 3rem;   
         transition: all .3s;
         position: absolute;
@@ -469,6 +470,9 @@ h1{
         padding-bottom: 20px;
     }
 
+    nav ul li{
+        padding: 0;
+    }
     .Portada{
         display: block;
     }
