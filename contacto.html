@@ -12,14 +12,31 @@
         <section id="background" style="background-image: url(Imagenes/Background.jpg);">
             <section id="principal">
                 <header>
-                    <a href="index.html">
+                    <a href="index.html" class="banner">
                         <img src="Imagenes\big-mouth-banner.jpg" alt="banner">
                     </a>
                     <nav>
                             <a class="logo" href="index.html">
                                 <img src  ="Imagenes/mourice_logo.png" alt="Logo Mourice">
                             </a>
-                        
+
+                            <label class="labe_hamburguesa" for="menu_hamburguesa">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="90"
+                                    height="90"
+                                    fill="white"
+                                    class="list_icon"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                                    />
+                                </svg>
+                            </label>
+                            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="galeria.html">Galería</a></li>
@@ -33,14 +50,14 @@
                     <div class="container-form">
                         <div class="info-form">
                             <h2>Contáctanos</h2>
-                            <p>Dejanos un mensaje si tienes alguna sugerencia para el sitio o si quieres trabajar con nosotros</p>
+                            <p>¡Dejanos un mensaje si tienes alguna sugerencia para el sitio o si quieres trabajar con nosotros!</p>
                             <a href="#"><i class="fa-solid fa-envelope"></i>amatiasalviso@gmail.com</a>
                             <a href="#"><i class="fa-brands fa-linkedin"></i>Matias Alviso</a>
                         </div>
                         <form action="#" autocomplete="off">
                             <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
                             <input type="emal" name="email" placeholder="Tu Email" class="campo">
-                            <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+                            <textarea name="mensaje" placeholder="Tu Mensaje..." class="campo"></textarea>
                             <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
                         </form>
                     </div>

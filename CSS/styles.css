@@ -100,7 +100,11 @@ footer a{
 
 footer div a img {
     max-width: 15rem;
-    width: 70%;
+    width: 60%;
+}
+
+footer div a img:hover {
+    width: 75%;
 }
 
 h1{
@@ -282,7 +286,7 @@ h1{
     border-style: dashed;
     border-color: red;
     border-radius: 20px;
-    width: 500px;
+    width: 375px;
 }
 
 .valoraciones{
@@ -383,9 +387,20 @@ h1{
     background: #e39403;
 }
 
+.labe_hamburguesa{
+    display: none;
+}
 
+.menu_hamburguesa{
+    display: none;
+}
 
 @media (max-width: 480px) {
+
+    :root {
+        --altura_nav: 120px;
+    }
+
     #background{
         background-color:#464646;
         min-width: 480px;
@@ -406,24 +421,45 @@ h1{
         display: none ;
     }
 
+    
     header nav {
-        position: sticky;
-        top: 0;
-        z-index: 1;
+        height: var(--altura_nav);
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
-        display:block;
+        display:flex;
         flex-basis: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     header img{
         padding-top: 1%;
-        width: 100px;
-        }
+        width: 90px;
+    }
 
-    nav ul {
+    ul{
         display: none;
+    }
+
+    .labe_hamburguesa{
+        display:flex;
+    }
+
+    .menu_hamburguesa:checked + ul {
+        background-color: #0a0a0ae0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;   
+        transition: all .3s;
+        position: absolute;
+        top: var(--altura_nav);
+        left: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 
     .Portada{
@@ -457,33 +493,6 @@ h1{
         margin-right: auto;
     }
 
-    /* nav.responsive ul {
-        display: block;
-    }
-
-    nav.responsive ul li {
-        display: block;
-        text-align: center;
-        padding: 0.5rem;
-    }
-
-    nav.responsive ul li a {
-        padding-right: 0;
-    } */
-
-    /* section {
-        max-width: 480px;
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-
-    /* .principal {
-        height: 250px;
-        padding: 10%;
-    } */
-
     h2 {
         font-size: 1rem;
     }
@@ -504,6 +513,37 @@ h1{
         width: 350px;
         display: block;
     }
+
+    .galeria a img{
+        width: 47%;
+    }
+
+    .imagen-descripcion{
+        display: block;
+    }
+
+    .imagen-descripcion img{
+        width: 98.8%;
+    }
+
+    .descripcion-imagen{
+        display: block;
+    }
+    .descripcion-imagen img {
+        margin: 0;
+        width: 98.8%;
+    }
+    
+    .container-form{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .container-form form {
+        width: 95%;
+    }
+
 
     footer {
         height: 80px;
